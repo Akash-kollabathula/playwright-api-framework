@@ -1,0 +1,28 @@
+{
+  "name": "playwright-api-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "test:crud": "playwright test tests/booking-crud.spec.ts",
+    "test:negative": "playwright test tests/booking-negative.spec.ts",
+    "test:filter": "playwright test tests/booking-filter.spec.ts",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "zod": "^4.6.6"
+  }
+}
